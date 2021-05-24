@@ -26,13 +26,13 @@ directions.
 
 The set of variables that were estimated from these signals are: 
 
-mean: Mean value
-std: Standard deviation 
+* mean: Mean value
+* std: Standard deviation 
 
 ## Complete List of Feature Variables
 
 | Variable                                              | Description                                                            |
-| ----------------------------------------------------- |:----------------------------------------------------------------------:| 
+| ----------------------------------------------------- | ---------------------------------------------------------------------- | 
 | timeBodyAccelerometerMeanXaxis                        | Accelerometer body on X-axis, mean                                     |
 | timeBodyAccelerometerMeanYaxis                        | Accelerometer body on Y-axis, mean                                     |
 | timeBodyAccelerometerMeanZaxis                        | Accelerometer body on Z-axis, mean                                     |
@@ -121,18 +121,18 @@ performed, 2) the test subject, 3) whether the data come from the test dataset
 or training dataset.
 
 Activities measured included:
-Walking
-Walking upstairs
-Walking downstairs
-Sitting
-Standing
-Laying
+* Walking
+* Walking upstairs
+* Walking downstairs
+* Sitting
+* Standing
+* Laying
 
 ## Complete List of Identifier Variables
 
 
 | Variable                   | Description                                  |
-| -------------------------- |:--------------------------------------------:| 
+| -------------------------- | -------------------------------------------- | 
 | dataId                     | Data from either test or training group      |
 | subjectId                  | Numeric identifier for test subject          |
 | activity                   | Activity measured
