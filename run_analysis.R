@@ -1,5 +1,3 @@
-rm(list = ls())
-
 # load dplyr for tibble, merge, summaries
 library(dplyr)
 
@@ -16,7 +14,7 @@ activityLabels$activity <- gsub("_", " ", activityLabels$activity)
 
 
 # load test activity ids, merge char values
-testActivityIds <- as_tibble(read.table("./data/test/Y_test.txt"))
+testActivityIds <- as_tibble(read.table("./data/test/y_test.txt"))
 names(testActivityIds) <- "activityId"
 testActivityIds <- left_join(testActivityIds, activityLabels)
 
@@ -35,7 +33,7 @@ rm(testSubjectIds, testActivityIds)
 
 
 # load training activity ids, merge char values
-trainActivityIds <- as_tibble(read.table("./data/train/Y_train.txt"))
+trainActivityIds <- as_tibble(read.table("./data/train/y_train.txt"))
 names(trainActivityIds) <- "activityId"
 trainActivityIds <- left_join(trainActivityIds, activityLabels)
 
@@ -96,9 +94,8 @@ summaryData <- allData %>%
   summarize_all(mean) %>%
   select(-dataId) %>%
   rename_with( ~ paste0(., "Avg"), -c(1, 2))
-  
 
 
-
-
-
+# save datasets
+write.csv(allData, "./data/AllData.csv")
+write.csv(summaryData, "./data/SummaryData.csv")

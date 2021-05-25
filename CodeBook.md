@@ -135,6 +135,6 @@ Activities measured included:
 | -------------------------- | -------------------------------------------- | 
 | dataId                     | Data from either test or training group      |
 | subjectId                  | Numeric identifier for test subject          |
-| activity                   | Activity measured
+| activity                   | Activity measured                            |
 
 
