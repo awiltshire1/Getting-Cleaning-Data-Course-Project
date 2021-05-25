@@ -98,5 +98,5 @@ summaryData <- allData %>%
 
 # save datasets
 if(!file.exists("./final data")){dir.create("./final data")}
-write.csv(allData, "./final data/AllData.csv")
-write.csv(summaryData, "./final data/SummaryData.csv")
+write.table(allData, "./final data/AllData.txt", row.names = FALSE)
+write.table(summaryData, "./final data/SummaryData.txt", row.names = FALSE)
