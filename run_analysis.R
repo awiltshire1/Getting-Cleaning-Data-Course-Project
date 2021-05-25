@@ -97,5 +97,6 @@ summaryData <- allData %>%
 
 
 # save datasets
-write.csv(allData, "./data/AllData.csv")
-write.csv(summaryData, "./data/SummaryData.csv")
+if(!file.exists("./final data")){dir.create("./final data")}
+write.csv(allData, "./final data/AllData.csv")
+write.csv(summaryData, "./final data/SummaryData.csv")
