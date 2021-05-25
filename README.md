@@ -33,8 +33,8 @@ The project includes the following files:
 | README.md                  | Project overview                                                      |
 | CodeBook.md                | Description of variables included in FullData.csv & SummaryData.csv   |
 | run_analysis.R             | R file to process and merge test & training datasets (see below)      |
-| final data/FullData.csv    | Processed dataset with test & training data merged                    |
-| final data/SummaryData.csv | Averages of FullData.csv variables by test subject & activity         |
+| final data/FullData.txt    | Processed dataset with test & training data merged                    |
+| final data/SummaryData.txt | Averages of FullData.txt variables by test subject & activity         |
 
 Also included are the original files from the Human Activity Recognition 
 Using Smartphones Dataset, version 1.0:
